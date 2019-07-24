@@ -1,13 +1,16 @@
-import * as React from 'react';
+import React, { FunctionComponent } from 'react';
 
-const Character: React.SFC<{}> = () => {
-  return (
-    <>
-      <article>
-        <h2>Here's one</h2>
-      </article>
-    </>
-  );
-};
+type CharProps = {
+  gender: string,
+  hair_color: string,
+  height: string,
+  mass: string,
+  name: string
+}
 
-export default Character;
+export const Character: FunctionComponent<CharProps> = ({ gender, name, hair_color, height, mass }) => <aside>
+  <h2>{ name }</h2>
+  <p>
+    { hair_color }
+  </p>
+</aside>

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { Character } from '../components/Character';
 
 import { IAppState } from '../store/Store';
 
@@ -22,7 +23,13 @@ class CharacterList extends React.Component<IProps> {
                 <span key={character.name} className="name">
                   {character.name}
                 </span>
-                
+                <Character 
+                  name={character.name} 
+                  hair_color={character.hair_color} 
+                  height={character.height}
+                  mass={character.mass}
+                  gender={character.gender}
+                 />
               </div>
             );
           })}
