@@ -1,3 +1,7 @@
+# Exploring Characters with React/Redux/Typescript
+
+[See for Yourself Here >](https://typescript-galaxy-explorer.surge.sh/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
