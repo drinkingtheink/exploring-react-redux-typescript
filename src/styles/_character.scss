@@ -1,0 +1,19 @@
+.char-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.character-display {
+  font-size: .8em;
+  padding: 1em;
+  margin: .5em;
+  background-color: $color5;
+
+  .eye-color-display {
+    border-radius: 50%;
+    height: 10em;
+    width: 10em;
+  }
+}

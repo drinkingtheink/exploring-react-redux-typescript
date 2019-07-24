@@ -1,16 +1,17 @@
 import React, { FunctionComponent } from 'react';
+import { ICharacter } from '../reducers/characterReducer';
 
 type CharProps = {
-  gender: string,
-  hair_color: string,
-  height: string,
-  mass: string,
-  name: string
+  character: ICharacter
 }
 
-export const Character: FunctionComponent<CharProps> = ({ gender, name, hair_color, height, mass }) => <aside>
-  <h2>{ name }</h2>
-  <p>
-    { hair_color }
-  </p>
+export const Character: FunctionComponent<CharProps> = ({ character }) => <aside className="character-display">
+  <h2>{ character.name }</h2>
+  <main>
+    <p><strong>Gender:</strong> { character.gender }</p>
+    <p><strong>Height:</strong> { character.height }</p>
+    <p><strong>Mass:</strong> { character.mass }</p>
+    <p><strong>Eye Color:</strong> { character.eye_color }</p>
+    <p><strong>Hair Color:</strong> { character.hair_color }</p>
+  </main>
 </aside>

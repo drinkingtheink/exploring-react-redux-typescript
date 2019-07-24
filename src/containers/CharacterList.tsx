@@ -15,22 +15,11 @@ class CharacterList extends React.Component<IProps> {
   public render() {
     const { characters } = this.props;
     return (
-      <div className="name-container">
+      <div className="char-container">
         {characters &&
           characters.map(character => {
             return (
-              <div>
-                <span key={character.name} className="name">
-                  {character.name}
-                </span>
-                <Character 
-                  name={character.name} 
-                  hair_color={character.hair_color} 
-                  height={character.height}
-                  mass={character.mass}
-                  gender={character.gender}
-                 />
-              </div>
+              <Character character={character} />
             );
           })}
       </div>
